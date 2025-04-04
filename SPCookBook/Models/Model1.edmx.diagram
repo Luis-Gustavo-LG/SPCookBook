@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="a1efbece7a3747b98a4e03f51052bec9" Name="Diagram1">
+        <EntityTypeShape EntityType="SPCookbookModel.Ingrediente" Width="1.5" PointX="0.75" PointY="3.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.IngredientesReceita" Width="1.5" PointX="8.25" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.NotaReceita" Width="1.5" PointX="3" PointY="7.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.Perfil" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.ProcedimentoReceitas" Width="1.5" PointX="8.25" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.ReceitaFavorira" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.TipoReceita" Width="1.5" PointX="3.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.TiposItem" Width="1.5" PointX="1.5" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.Usuario" Width="1.5" PointX="0.75" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="SPCookbookModel.UsuarioReceita" Width="1.5" PointX="6" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="SPCookbookModel.FK_Perfil_Ingrediente" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_recipeItems_ItemTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_usersRecipesIngredients_recipeItems" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_usersRecipesIngredients_userRecipes" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_recipesRating_userRecipes" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_recipesRating_users" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_Perfil_Usuario" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_usersRecipesProcedures_userRecipes" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_userFavoriteRecipes_userRecipes" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_userFavoriteRecipes_users" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_userRecipes_recipeType" ManuallyRouted="false" />
+        <AssociationConnector Association="SPCookbookModel.FK_userRecipes_users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="SPCookbookModel.sysdiagrams" Width="1.5" PointX="6.375" PointY="0.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
